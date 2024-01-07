@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "1039815695116",
+    "project_id": "br-jewels",
+    "storage_bucket": "br-jewels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039815695116:android:fcef08b8f22921cba9c729",
+        "android_client_info": {
+          "package_name": "com.brjewels.admin.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039815695116-6g5ip9dlmi9ahuag6vufmss6ejqdb7vh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brjewels.admin.android",
+            "certificate_hash": "121baea03f6ef365330399cfa4c3df874d0ef53b"
+          }
+        },
+        {
+          "client_id": "1039815695116-ucphjg51l4a3tfklpsedq5k1noo2k9f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO3oTicBNbyY0kgTFV_1kLhxNcymVRkBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039815695116-ucphjg51l4a3tfklpsedq5k1noo2k9f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039815695116:android:0513d8c90c21de12a9c729",
+        "android_client_info": {
+          "package_name": "com.smartherd.jewelleryshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039815695116-ucphjg51l4a3tfklpsedq5k1noo2k9f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO3oTicBNbyY0kgTFV_1kLhxNcymVRkBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039815695116-ucphjg51l4a3tfklpsedq5k1noo2k9f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/side_menu_notification"
+        android:icon="@drawable/inventory_ic"
+        android:title="Notifications"/>
+
+    <item
+        android:id="@+id/side_menu_manage_category"
+        android:title="Manage My Categories"
+        android:icon="@drawable/inventory_ic"/>
+
+    <item
+        android:id="@+id/side_menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings_ic"/>
+
+    <item
+        android:id="@+id/side_menu_logout"
+        android:title="Logout"
+        android:icon="@drawable/profile_ic"/>
+
+
+</menu>

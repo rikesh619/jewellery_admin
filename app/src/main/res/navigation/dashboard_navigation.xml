@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_navigation"
+    app:startDestination="@id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.brjewels.admin.android.activity.tabbar.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.brjewels.admin.android.activity.tabbar.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_promotion"
+        android:name="com.brjewels.admin.android.activity.tabbar.settings.SettingsFragment"
+        android:label="promotion_fragment"
+        tools:layout="@layout/fragment_settings"/>
+
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.brjewels.admin.android.activity.tabbar.inventory.InventoryFragment"
+        android:label="inventory_fragment"
+        tools:layout="@layout/fragment_inventory"/>
+
+</navigation>
