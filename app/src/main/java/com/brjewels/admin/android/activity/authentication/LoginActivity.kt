@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.core.content.ContentProviderCompat.requireContext
 import com.brjewels.admin.android.MainActivity
+import com.brjewels.admin.android.activity.DashboardActivity
 import com.brjewels.admin.android.databinding.ActivityLoginBinding
 import com.brjewels.admin.android.models.Users
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -46,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
                                 if (documentSnapshot.exists()){
                                     val user = documentSnapshot.toObject(Users :: class.java)
                                     if (user != null && user.role == "admin" && user.user_id == userId){
-                                        val intent = Intent(this , MainActivity :: class.java)
+                                        val intent = Intent(this , DashboardActivity :: class.java)
                                         startActivity(intent)
                                     }else {
                                         Toast.makeText(this , "Sorry You Are Authorized to have the Access" , Toast.LENGTH_SHORT).show()

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewMens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Womens"
+            android:textAllCaps="true"
+            android:fontFamily="@font/source_serif_pro_regular"
+            android:textSize="18sp"
+            android:onClick="onCategoryClick"
+            android:tag="0" />
+
+
+        <TextView
+            android:id="@+id/textViewWomens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Mens"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:fontFamily="@font/source_serif_pro_regular"
+            android:onClick="onCategoryClick"
+            android:tag="1" />
+
+        <TextView
+            android:id="@+id/textViewUnisex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="Unisex"
+            android:fontFamily="@font/source_serif_pro_regular"
+            android:textSize="18sp"
+            android:onClick="onCategoryClick"
+            android:tag="2" />
+    </LinearLayout>
+
+    <!-- Underline view -->
+    <View
+        android:id="@+id/underlineView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/view"
+        android:layout_marginTop="5dp"
+        android:background="#0000FF"
+        android:layout_centerHorizontal="true"
+        tools:ignore="NotSibling" />
+
+    <ViewFlipper
+        android:id="@+id/categoryViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/underlineView"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/womens_category_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mens_category_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/unisex_category_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+    </ViewFlipper>
+</RelativeLayout>

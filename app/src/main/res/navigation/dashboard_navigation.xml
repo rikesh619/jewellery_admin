@@ -19,15 +19,15 @@
         tools:layout="@layout/fragment_home"/>
 
     <fragment
-        android:id="@+id/nav_promotion"
-        android:name="com.brjewels.admin.android.activity.tabbar.settings.SettingsFragment"
+        android:id="@+id/nav_categories"
+        android:name="com.brjewels.admin.android.activity.tabbar.categories.CategoriesFragment"
         android:label="promotion_fragment"
-        tools:layout="@layout/fragment_settings"/>
+        tools:layout="@layout/fragment_categories"/>
 
     <fragment
-        android:id="@+id/nav_inventory"
-        android:name="com.brjewels.admin.android.activity.tabbar.inventory.InventoryFragment"
+        android:id="@+id/nav_products"
+        android:name="com.brjewels.admin.android.activity.tabbar.products.ProductFragment"
         android:label="inventory_fragment"
-        tools:layout="@layout/fragment_inventory"/>
+        tools:layout="@layout/fragment_product"/>
 
 </navigation>
